@@ -4,7 +4,7 @@
 /* Slideshow container */
 
 .slideshow-container {
-    margin-top: 800px;
+    top: -40px;
     max-width: 770px;
     position: relative;
     margin: auto;
@@ -29,14 +29,13 @@
     border-radius: 50%;
 }
 .prev {
-    left: -80px;
+
+    left: -50px;
 }
 /* Position the "next button" to the right */
 .next {
-    right: -80px;
+    right: -50px;
 }
-/* On hover, add a black background color with a little bit see-through */
-
 .prev:hover,
 .next:hover {
     background-color: rgba(255, 255, 255, 0.8);
@@ -73,8 +72,8 @@
 }
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     margin: 0 2px;
     border: 1px solid white;
     /*background-color: #bbb;*/
@@ -95,7 +94,7 @@
     animation-name: fade;
     animation-duration: 1.5s;
 }
-@-webkit-keyframes fade {
+/*@-webkit-keyframes fade {
     from {
         opacity: .4
     }
@@ -150,7 +149,7 @@
     transform: scale(1);
       opacity: 1;
   }
-}
+}*/
 
 * {
     margin: 0px;
@@ -160,8 +159,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 body {
-    background: url(background.jpg) no-repeat center center fixed;
+    background: url(background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-color: #464646;
 }
 /*
 font-family: 'Roboto', sans-serif;
@@ -208,11 +211,11 @@ h2 {
 }
 .beroep h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 .beroep h4 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     /*color: #888 ;*/
 }
 /*text index*/
@@ -256,11 +259,11 @@ section.index {
     display: flex;
     justify-content: space-evenly;
 }
-.fotoplacement i:hover {
-  size: 120%;
-}
-/*overmij*/
 
+/*overmij*/
+article.overmij {
+
+}
 
 /*opleiding*/
 main {
@@ -273,40 +276,48 @@ main {
     right: 0;
     height: 100vh;
 }
-main .mainovermij {
+.mainovermijb {
   padding: 80px 0px;
   display: flex;
-  pad
+  flex-wrap: nowrap;
+
 }
-section .mainovermij {
+.mainovermijc {
   width: 45%;
+
+  display: flex;
+  flex-direction: column;
 }
-
-main .mainovermij img {
-  height: 40px;
-
+.mainovermijc img {
+  height: 150px;
+}
+section .vaardigheden {
+  width: 45%
 }
 .mainopl {
   margin-top: 100vh;
 }
 section.box {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    flex-direction: row;
-    justify-content: space-evenly;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      flex-direction: row;
+      justify-content: space-evenly;
 }
 .box article.textbox {
     margin: 15px 10px;
     animation: fadein3 5s;
-    height: 95px;
-    width: 475px;
+    margin: 2% 5% 2% 5%;
+    height: 120px;
+    width: 520px;
     padding: 16px;
     border-top: 2px solid rgba(255, 255, 255, 0.3);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(200, 200, 200, 0.3);
+}
+h2 {
+    margin-bottom: 39.5px;
 }
 /*beroep*/
 
@@ -325,4 +336,14 @@ section.box {
     .box article {
         width: 84.5%;
     }
+}
+@media screen and (max-width: 860px) {
+  .prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 }
