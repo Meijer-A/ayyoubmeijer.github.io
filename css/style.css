@@ -158,7 +158,7 @@
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
-body {
+html {
     background: url(background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -308,7 +308,7 @@ section.box {
 .box article.textbox {
     margin: 15px 10px;
     animation: fadein3 5s;
-    margin: 2% 5% 2% 5%;
+    margin: 0.5% 5% 2% 5%;
     height: 120px;
     width: 520px;
     padding: 16px;
