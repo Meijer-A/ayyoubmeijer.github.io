@@ -271,10 +271,13 @@ main {
     right: 0;
     height: 100vh;
 }
-.mainovermij {
+main.mainovermij {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+section.mainovermij {
+  width: 45%;
 }
 .mainopl {
   margin-top: 100vh;
