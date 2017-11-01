@@ -101,21 +101,23 @@
 
 /* Container for skill bars */
 .container {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
+    width: 100%;
+    background-color: rgba(200, 200, 200, 0.3);
+    border-radius: 3px
 }
 
 .skills {
-    text-align: right; /* Right-align text */
-    padding-right: 20px; /* Add some right padding */
-    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
     color: white;
+    border-radius:  3px 0 0 3px;
 }
 
-#html {width: 80%; background-color: #4CAF50;}
-#css {width: 70%; background-color: #2196F3;}
-#js {width: 20%; background-color: #f44336;}
-#ps {width: 40%; background-color: #808080;}
+#html  {width: 80%; background-color: rgb(200, 200, 200);}
+#css   {width: 70%; background-color: rgb(50, 50, 50);}
+#js    {width: 20%; background-color: rgb(150, 150, 150);}
+#ps    {width: 40%; background-color: rgb(100, 100, 100);}
 /*fadein inladen tekst*/
 
 /*@-webkit-keyframes fade {
@@ -193,11 +195,7 @@ body {
     background-size: 100%;
     background-size: cover;
     background-attachment: fixed;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+
 
 }
 /*
