@@ -1,3 +1,4 @@
+/*slideshow*/
 * {
     box-sizing: border-box
 }
@@ -94,6 +95,29 @@
     animation-name: fade;
     animation-duration: 1.5s;
 }
+/*skill bars*/
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white;
+}
+
+#html {width: 80%; background-color: #4CAF50;}
+#css {width: 70%; background-color: #2196F3;}
+#js {width: 20%; background-color: #f44336;}
+#ps {width: 40%; background-color: #808080;}
+/*fadein inladen tekst*/
+
 /*@-webkit-keyframes fade {
     from {
         opacity: .4
@@ -162,6 +186,7 @@ body {
     background: url(background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+     background-size: 100%;
     background-attachment: fixed;
     position: fixed;
     left: 0;
@@ -237,12 +262,14 @@ h3.index {
 h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
 }
+p {
+
+}
 h2 {
   animation: fadein2 5s;
   z-index: 0;
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
+  margin-top: 55px;
+  text-align: center;
 }
 /*index*/
 
@@ -281,25 +308,41 @@ main {
     height: 100vh;
 }
 .mainovermijb {
-  padding: 80px 0px;
   display: flex;
-  flex-wrap: nowrap;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
 }
 .mainovermijc {
-  width: 45%;
-
+  width: 55%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+}
+.mainovermijb h3 {
+  padding-bottom: 5px;
+}
+#fotospace {
+  padding-left: 20px;
+}
+.textovermij {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .mainovermijc img {
-  height: 150px;
+width: 38%;
 }
-section .vaardigheden {
-  width: 45%
+section.vaardigheden {
+  width: 35%;
 }
 .mainopl {
   margin-top: 100vh;
+}
+article.overmij {
+  height: 100%;
 }
 section.box {
       margin: auto;
