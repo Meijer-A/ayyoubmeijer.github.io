@@ -182,18 +182,22 @@
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
+html {
+    min-height: 100%
+}
 body {
+    min-height: 100%;
     background: url(background.jpg);
-    margin: 0;
-    /*background-position: center center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;*/
+    bottom: 0;
 
 }
 /*
@@ -260,11 +264,14 @@ h3.index {
   font-size: 28px;
 }
 /*text overmij*/
-h1, h2, h3, h4 {
+h1, h2, h3,{
   font-family: 'Roboto', sans-serif;
 }
+H4 {
+  font-family: 'Open Sans', sans-serif;
+}
 p {
-
+  font-family: 'Open Sans', sans-serif;
 }
 h2 {
   animation: fadein2 5s;
@@ -335,6 +342,12 @@ main {
 }
 .mainovermijc img {
 width: 38%;
+}
+.overmij h4 {
+  padding: 10px 0 5px 0;
+}
+.overmij p {
+  padding: 5px 0;
 }
 section.vaardigheden {
   width: 35%;
