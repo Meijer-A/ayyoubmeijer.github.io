@@ -114,10 +114,10 @@
     border-radius:  3px 0 0 3px;
 }
 
-#html  {width: 80%; background-color: rgb(200, 200, 200);}
-#css   {width: 70%; background-color: rgb(50, 50, 50);}
+#html  {width: 80%; background-color: rgb(150, 150, 150);}
+#css   {width: 70%; background-color: rgb(80, 80, 80);}
 #js    {width: 20%; background-color: rgb(150, 150, 150);}
-#ps    {width: 40%; background-color: rgb(100, 100, 100);}
+#ps    {width: 40%; background-color: rgb(80, 80, 80);}
 /*fadein inladen tekst*/
 
 /*@-webkit-keyframes fade {
@@ -241,11 +241,11 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
 }
-.beroep h3 {
+.textbox h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
 }
-.beroep h4 {
+.textbox h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     /*color: #888 ;*/
@@ -371,9 +371,10 @@ section.box {
     height: 120px;
     width: 520px;
     padding: 16px;
-    border-top: 2px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(200, 200, 200, 0.3);
+    /*border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);*/
+    background-color: rgba(150, 150, 150, 0.4);
+    border-radius: 5px;
 }
 h2 {
     margin-bottom: 39.5px;
