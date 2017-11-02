@@ -192,8 +192,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
-    min-width: 100vw;
+
     background-color: rgb(55, 55, 55);
 }
 
@@ -291,7 +290,7 @@ h2 {
 /*index*/
 
 section.index {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,6 +417,8 @@ h2 {
 @media screen and (max-width: 600px) {
     body {
         min-width: 390px;
+        min-height: 100vh;
+        min-width: 100vw;
     }
     h2 {
         margin-bottom: 39.5px;
