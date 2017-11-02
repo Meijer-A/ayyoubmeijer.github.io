@@ -178,26 +178,34 @@
 }*/
 
 * {
-
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
-html {
-    min-height: 100%
-}
 body {
     min-height: 610px;
     background: url(background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% ;
     background-size: cover;
     background-attachment: fixed;
-
-
+}
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(photos/2452.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 /*
 font-family: 'Roboto', sans-serif;
@@ -237,6 +245,17 @@ ul li a {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
+/*algemeene styling*/
+main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
 /*text*/
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -263,7 +282,7 @@ h3.index {
   font-size: 28px;
   text-align: center;
 }
-/*text overmij*/
+/*text*/
 h1, h2, h3{
   font-family: 'Roboto', sans-serif;
 }
@@ -300,18 +319,6 @@ section.index {
 }
 
 /*overmij*/
-
-
-/*opleiding*/
-main {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-}
 .mainovermijb {
   display: flex;
   flex-wrap: wrap;
@@ -355,6 +362,7 @@ section.vaardigheden {
 article.overmij {
   height: 100%;
 }
+/*beroep en overmij*/
 section.box {
       margin: auto;
       display: flex;
