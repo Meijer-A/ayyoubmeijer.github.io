@@ -186,6 +186,7 @@
 }
 body {
     /*min-height: 610px;*/
+    -webkit-overflow-scrolling: auto;
     background: url(background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
