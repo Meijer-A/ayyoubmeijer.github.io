@@ -185,12 +185,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 body {
-    min-height: 610px;
+    /*min-height: 610px;*/
     background: url(background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
+    min-height: 100%;
 }
 
 /*
