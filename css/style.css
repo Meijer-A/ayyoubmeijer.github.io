@@ -203,10 +203,10 @@ font-family: 'Open Sans', sans-serif;
 /*header*/
 
 header {
-    animation: fadein 5s;
+  /*  animation: fadein 5s;
     margin: 20px 20px 0px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 h1 {
     z-index: 2;
