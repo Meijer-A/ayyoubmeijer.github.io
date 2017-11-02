@@ -203,10 +203,10 @@ font-family: 'Open Sans', sans-serif;
 /*header*/
 
 header {
-  /*  animation: fadein 5s;
+    animation: fadein 5s;
     margin: 20px 20px 0px 20px;
     display: flex;
-    justify-content: space-between;*/
+    justify-content: space-between;
 }
 h1 {
     z-index: 2;
@@ -417,7 +417,7 @@ h2 {
 @media screen and (max-width: 600px) {
     body {
         min-width: 390px;
-        min-height: 100vh;
+        /*min-height: 100vh;*/
         min-width: 100vw;
     }
     h2 {
