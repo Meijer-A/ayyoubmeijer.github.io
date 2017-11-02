@@ -193,6 +193,7 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
     min-width: 100vw;
+    background-color: rgb(55, 55, 55);
 }
 
 /*
