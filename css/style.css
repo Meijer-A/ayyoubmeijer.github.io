@@ -192,7 +192,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
+    min-height: 100vh;
     background-color: rgb(55, 55, 55);
 }
 
