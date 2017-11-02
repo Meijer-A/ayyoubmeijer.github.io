@@ -184,6 +184,10 @@
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
+html {
+  min-height: 100%;
+  height: 100%
+}
 body {
     /*min-height: 610px;*/
     -webkit-overflow-scrolling: auto;
@@ -192,7 +196,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 100%;
     background-color: rgb(55, 55, 55);
 }
 
