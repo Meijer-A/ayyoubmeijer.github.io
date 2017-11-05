@@ -5,7 +5,7 @@
 /* Slideshow container */
 
 .slideshow-container {
-    top: -40px;
+    top: 0px;
     max-width: 770px;
     position: relative;
     margin: auto;
@@ -66,7 +66,7 @@
 
 .dots {
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 0;
     right: 0;
     text-align: center;
@@ -349,7 +349,7 @@ div img {
   margin: auto;
   margin-bottom: 15px;
 }
-.vaardigheden {
+.overmijvaardigheden {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -407,12 +407,22 @@ h2 {
   }
 }
 @media screen and (max-width: 1000px) {
+
   section.overmij {
     display: flex;
     flex-direction: column;
   }
+  .overmijbox {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .overmijvaardigheden {
+    margin: auto;
+    width: 90%;
+  }
   body {
-    width: 100%
+    width: 100%;
   }
   div.overmij img {
     height: 150px;
@@ -453,7 +463,6 @@ h2 {
     body {
         min-width: 390px;
         /*min-height: 100vh;*/
-        min-width: 100vw;
     }
     h2 {
         margin-bottom: 39.5px;
