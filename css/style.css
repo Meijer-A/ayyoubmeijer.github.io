@@ -243,6 +243,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+main
 
 /*text*/
 h2 {
@@ -287,14 +288,19 @@ h2 {
   text-align: center;
 }
 /*index*/
-
+main.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 section.index {
-    position: relative;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 .fotoindex {
     height: 50px;
