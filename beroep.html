@@ -8,11 +8,17 @@
     <link rel="icon" href="fotos/portfolio.png">
     <script src="https://use.fontawesome.com/49cd1ca811.js"></script>
     <meta name="viewport" content="width=device-width, user-scalable=0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <h1>Portfolio</h1>
-        <nav>
+        <div class="containermenu icons" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <nav id="nav">
             <ul>
                 <li><a href="index.html">home</a>
                 </li>
@@ -50,5 +56,28 @@
             </article>
         </section>
     </main>
+    <script type="text/javascript">
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    /nav icon xmobile/
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+      console.log('ok');
+    $(document).ready(function() {
+
+      $('.icons').click(function() {
+        console.log($('#nav'));
+        if ($('#nav').css('display') === 'none') {
+          $('#nav').css('display', 'block');
+          $('#nav').css('opacity', '1');
+        } else {
+          $('#nav').css('display', 'none');
+          $('#nav').css('opacity', '0');
+        }
+      });
+    });
+    </script>
 </body>
 </html>

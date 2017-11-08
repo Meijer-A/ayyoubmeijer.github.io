@@ -12,6 +12,11 @@
 <body>
     <header>
         <h1>Portfolio</h1>
+        <div class="containermenu icons" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <nav>
           <div class="nav-text">
 
@@ -43,6 +48,29 @@
     </section>
 
   </main>
+  <script type="text/javascript">
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  /nav icon xmobile/
+  function myFunction(x) {
+      x.classList.toggle("change");
+  }
+    console.log('ok');
+  $(document).ready(function() {
+
+    $('.icons').click(function() {
+      console.log($('#nav'));
+      if ($('#nav').css('display') === 'none') {
+        $('#nav').css('display', 'block');
+        $('#nav').css('opacity', '1');
+      } else {
+        $('#nav').css('display', 'none');
+        $('#nav').css('opacity', '0');
+      }
+    });
+  });
+  </script>
 </body>
 
 </html>
