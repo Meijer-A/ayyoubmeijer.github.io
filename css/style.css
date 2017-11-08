@@ -518,7 +518,7 @@ h2 {
       left: -20px;
       right: -20px;
       height: 250px;
-      background-color: green;
+      background-color: rgba(0, 0, 0, 0.9);
     }
     ul {
       padding-top: 60px;
@@ -529,9 +529,18 @@ h2 {
     }
     ul li {
       height: 47.5;
+      padding-bottom: 15px;
     }
     ul li a {
       margin: auto;
+      font-size: 25px;
+    }
+    ul li a.currentpage {
+      font-size: 25px;
+      border: none;
+      color: rgba(150, 150, 150, 0.6);
+      pointer-events: none;
+   cursor: default;
     }
 }
 @media screen and (max-width: 860px) {
