@@ -178,51 +178,6 @@
         opacity: 1
     }
 }
-@keyframes fadein {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  10% {
-
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-      opacity: 1;
-  }
-}
-@keyframes fadein2 {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-      opacity: 1;
-  }
-}
-@keyframes fadein3 {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-      opacity: 1;
-  }
-}
-/*fadein*/
-main, div {
-  animation: fadein2 3s;
-}
-
 /*alles*/
 
 * {
@@ -250,7 +205,6 @@ font-family: 'Open Sans', sans-serif;
 /*header*/
 
 header {
-    animation: fadein 3s;
     margin: 20px 20px 0px 20px;
     display: flex;
     justify-content: space-between;
@@ -313,12 +267,10 @@ h2 {
 /*text index*/
 
 h2.index {
-    animation: fadein2 3s;
     color: white;
     font-size: 35px;
 }
 h3.index {
-    animation: fadein3 3s;
     color: white;
     font-size: 28px;
     text-align: center;
@@ -337,7 +289,6 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 h2 {
-    animation: fadein2 3s;
     z-index: 0;
     margin-top: 55px;
     text-align: center;
@@ -359,7 +310,6 @@ section.index {
     margin-top: 15px;
 }
 .fotoplacement {
-    animation: fadein3 3s;
     width: 240px;
     display: flex;
     justify-content: space-evenly;
@@ -437,7 +387,6 @@ section.box {
 }
 .box article.textbox {
     margin: 15px 10px;
-    animation: fadein3 3s;
     margin: 0.5% 5% 2% 5%;
     height: 120px;
     width: 520px;
