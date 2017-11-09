@@ -1,37 +1,38 @@
 /*menu button*/
+
 .containermenu {
     display: none;
     cursor: pointer;
     z-index: 3;
 }
-
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
 }
-
 /* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
 
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
 /* Fade out the second bar */
+
 .change .bar2 {
     opacity: 0;
 }
-
 /* Rotate last bar */
+
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
-
-
 /*slideshow*/
+
 * {
     box-sizing: border-box
 }
@@ -47,6 +48,7 @@
     display: none;
 }
 /* Next & previous buttons */
+
 .prev,
 .next {
     cursor: pointer;
@@ -63,10 +65,10 @@
     border-radius: 50%;
 }
 .prev {
-
     left: -50px;
 }
 /* Position the "next button" to the right */
+
 .next {
     right: -50px;
 }
@@ -88,6 +90,9 @@
 }
 /* Number text (1/3 etc) */
 
+.imgwidth {
+    width: 100%;
+}
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -130,37 +135,41 @@
 }
 /*skill bars*/
 /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
 
+* {
+    box-sizing: border-box
+}
 /* Container for skill bars */
+
 .container {
     width: 100%;
     background-color: rgba(200, 200, 200, 0.3);
     border-radius: 3px
 }
-
 .skills {
     text-align: right;
     padding-right: 20px;
     line-height: 40px;
     color: white;
-    border-radius:  3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
 }
-
-#html  {width: 80%; background-color: rgb(150, 150, 150);}
-#css   {width: 70%; background-color: rgb(80, 80, 80);}
-#js    {width: 20%; background-color: rgb(150, 150, 150);}
-#ps    {width: 40%; background-color: rgb(80, 80, 80);}
+#html {
+    width: 80%;
+    background-color: rgb(150, 150, 150);
+}
+#css {
+    width: 70%;
+    background-color: rgb(80, 80, 80);
+}
+#js {
+    width: 20%;
+    background-color: rgb(150, 150, 150);
+}
+#ps {
+    width: 40%;
+    background-color: rgb(80, 80, 80);
+}
 /*fadein inladen tekst*/
-
-/*@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
 @keyframes fade {
     from {
         opacity: .4
@@ -208,7 +217,13 @@
     transform: scale(1);
       opacity: 1;
   }
-}*/
+}
+/*fadein*/
+main, div {
+  animation: fadein2 3s;
+}
+
+/*alles*/
 
 * {
     margin: 0px;
@@ -217,9 +232,9 @@
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
-
 body {
     /*min-height: 610px;*/
+
     -webkit-overflow-scrolling: auto;
     background: url(background.jpg);
     background-position: center center;
@@ -228,7 +243,6 @@ body {
     background-attachment: fixed;
     background-color: rgb(55, 55, 55);
 }
-
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -272,14 +286,17 @@ ul li a {
     font-weight: bold;
 }
 /*algemeene styling*/
+
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+main.overmij {
+    margin-bottom: 80px;
+}
 /*text*/
+
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -294,35 +311,39 @@ h2 {
     /*color: #888 ;*/
 }
 /*text index*/
+
 h2.index {
-  animation: fadein2 3s;
-  color: white;
-  font-size: 35px;
+    animation: fadein2 3s;
+    color: white;
+    font-size: 35px;
 }
 h3.index {
-  animation: fadein3 3s;
-  color: white;
-  font-size: 28px;
-  text-align: center;
+    animation: fadein3 3s;
+    color: white;
+    font-size: 28px;
+    text-align: center;
 }
 /*text*/
-h1, h2, h3{
-  font-family: 'Roboto', sans-serif;
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
 }
 H4 {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 p {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 h2 {
-  animation: fadein2 3s;
-  z-index: 0;
-  margin-top: 55px;
-  text-align: center;
+    animation: fadein2 3s;
+    z-index: 0;
+    margin-top: 55px;
+    text-align: center;
 }
 h2:first-child {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 /*index*/
 
@@ -331,7 +352,7 @@ section.index {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin-top: 38vh;
 }
 .fotoindex {
     height: 50px;
@@ -343,80 +364,76 @@ section.index {
     display: flex;
     justify-content: space-evenly;
 }
-
 /*overmij*/
+
 .mainovermijb {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
 }
 .mainovermijc {
-  width: 55%;
-  height: 450px;
-  display: flex;
-  flex-direction: row;
+    width: 55%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
 }
-
-
 .overmij h3 {
-  padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 #fotospace {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 section.overmij {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .overmijbox {
-  width: 55%;
-  display: flex;
-  flex-direction: column;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
 }
 article.overmij {
-  width:
+    width:
 }
 div img {
-  width: 200px;
-  margin: auto;
-  margin-bottom: 15px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 15px;
 }
 .overmijvaardigheden {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
 div.overmijbox {
-  display: flex;
-
+    display: flex;
 }
-
 .overmij h4 {
-  padding: 10px 0 5px 0;
+    padding: 10px 0 5px 0;
 }
 .overmij p {
-  padding: 5px 0;
+    padding: 5px 0;
 }
 section.vaardigheden {
-  width: 35%;
+    width: 35%;
 }
 article.overmij {
-  height: 100%;
+    height: 100%;
 }
 /*beroep en overmij*/
+
 section.box {
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      flex-direction: row;
-      justify-content: space-evenly;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .box article.textbox {
     margin: 15px 10px;
@@ -427,6 +444,7 @@ section.box {
     padding: 16px;
     /*border-top: 2px solid rgba(255, 255, 255, 0.3);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);*/
+
     background-color: rgba(150, 150, 150, 0.4);
     border-radius: 5px;
 }
@@ -434,59 +452,46 @@ h2 {
     margin-bottom: 39.5px;
 }
 /*beroep*/
+
 @media screen and (max-width: 1200px) and (min-width: 870px) {
-  div.overmij {
-    flex-direction: column;
-    justify-content: center;
-  }
-  div.overmij img {
-    height: 150px;
-    margin: auto;
-  }
+    div.overmij {
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.overmij img {
+        height: 150px;
+        margin: auto;
+    }
+}
+main.overmij {
+    height: auto;
 }
 @media screen and (max-width: 1000px) {
-
-  section.overmij {
-    display: flex;
-    flex-direction: column;
-  }
-  .overmijbox {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-  .overmijvaardigheden {
-    margin: auto;
-    width: 90%;
-  }
-  body {
-    width: 100%;
-  }
-  div.overmij img {
-    height: 150px;
-    margin: auto;
-  }
-  main {
-    display: flex;
-    flex-wrap: nowrap;
-
-    flex-direction: column;
-  }
-  .mainovermijb {
-    display: flex;
-    flex-direction: column;
-  }
-  .mainovermijc  {
-    display:
-    flex-wrap: nowrap;
-    flex-direction: column;
-    width: 95%;
-  }
-  text
-  .vaardigheden {
-    flex-direction: column;
-    width: 95%;
-  }
+    .overmijbox {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .overmijvaardigheden {
+        margin: auto;
+        width: 90%;
+    }
+    body {
+        width: 100%;
+    }
+    div.overmij img {
+        height: 150px;
+        margin: auto;
+    }
+    main {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .vaardigheden {
+        flex-direction: column;
+        width: 95%;
+    }
 }
 @media screen and (max-width: 1070px) and (min-width: 600px) {
     h2 {
@@ -494,10 +499,6 @@ h2 {
     }
 }
 @media screen and (max-width: 600px) {
-  html {
-    min-height: 100%;
-    height: 100%
-  }
     body {
         min-width: 390px;
         /*min-height: 100vh;*/
@@ -506,50 +507,49 @@ h2 {
         margin-bottom: 39.5px;
     }
     .box article.textbox {
-        width: 84.5%;
+        width: 95%;
     }
     .containermenu {
-      display: inline-block;
+        display: inline-block;
     }
     nav {
-      display: none;
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      right: -20px;
-      height: 250px;
-      background-color: rgba(0, 0, 0, 0.9);
+        display: none;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        right: -20px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.9);
     }
     ul {
-      padding-top: 60px;
-      flex-direction: column;
-      margin: auto;
-      align-items: center;
-
+        padding-top: 60px;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
     }
     ul li {
-      height: 47.5;
-      padding-bottom: 15px;
+        height: 47.5;
+        padding-bottom: 15px;
     }
     ul li a {
-      margin: auto;
-      font-size: 25px;
+        margin: auto;
+        font-size: 25px;
     }
     ul li a.currentpage {
-      font-size: 25px;
-      border: none;
-      color: rgba(150, 150, 150, 0.6);
-      pointer-events: none;
-   cursor: default;
+        font-size: 25px;
+        border: none;
+        color: rgba(150, 150, 150, 0.6);
+        pointer-events: none;
+        cursor: default;
     }
 }
 @media screen and (max-width: 860px) {
-  .prev {
-    left: 0;
-    border-radius: 0 3px 3px 0;
-  }
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+    .prev {
+        left: 0;
+        border-radius: 0 3px 3px 0;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
 }
