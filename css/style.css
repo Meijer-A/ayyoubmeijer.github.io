@@ -188,8 +188,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 body {
-    /*min-height: 610px;*/
-
     -webkit-overflow-scrolling: auto;
     background: url(background.jpg);
     background-position: center center;
@@ -391,9 +389,6 @@ section.box {
     height: 120px;
     width: 520px;
     padding: 16px;
-    /*border-top: 2px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);*/
-
     background-color: rgba(150, 150, 150, 0.4);
     border-radius: 5px;
 }
@@ -411,9 +406,6 @@ h2 {
         height: 150px;
         margin: auto;
     }
-}
-main.overmij {
-    height: auto;
 }
 @media screen and (max-width: 1000px) {
     .overmijbox {
@@ -448,9 +440,11 @@ main.overmij {
     }
 }
 @media screen and (max-width: 600px) {
+    html {
+        height: 100%;
+    }
     body {
         min-width: 390px;
-        /*min-height: 100vh;*/
     }
     h2 {
         margin-bottom: 39.5px;
